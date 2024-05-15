@@ -4,7 +4,7 @@ import { SignalAuthState } from '../Types'
 import { SignalRepository } from '../Types/Signal'
 import { generateSignalPubKey } from '../Utils'
 import { jidDecode } from '../WABinary'
-
+ 
 export function makeLibSignalRepository(auth: SignalAuthState): SignalRepository {
 	const storage = signalStorage(auth)
 	return {
